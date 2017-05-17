@@ -4,28 +4,11 @@
 <script>
 
 function choose(){
-  
-  $('#test').val(makeUniqueRandom())
-}
-
-var uniqueRandoms = [];
-var numRandoms = 15;
-function makeUniqueRandom() {
-    // refill the array if needed
-    if (!uniqueRandoms.length) {
-        for (var i = 0; i < numRandoms; i++) {
-            uniqueRandoms.push(i);
-        }
-    }
-    var index = Math.floor(Math.random() * uniqueRandoms.length);
-    var val = uniqueRandoms[index];
-
-    // now remove that value from the array
-    uniqueRandoms.splice(index, 1);
-
-    return val;
+  alert(1)
 
 }
+
+
 
 </script>
 </head>
