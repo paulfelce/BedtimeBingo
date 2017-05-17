@@ -8,8 +8,9 @@ $().ready(function()
   });
   
 function choose(){
-  $('#test').val(makeUniqueRandom())
-
+  x=makeUniqueRandom();
+  $('#test').val(x)
+  $('#bingo_image').src(images[x]);
 }
 
   var uniqueRandoms = [];
@@ -61,7 +62,7 @@ images.push("http://clipartix.com/wp-content/uploads/2016/07/Fairy-clip-art-imag
 <body>
 <button onclick="choose()">New number</button>
 <input id="test"></input>
-
+  <img id="bingo_image" src="></image>
 
 </body>
 </html>
