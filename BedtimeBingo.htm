@@ -10,7 +10,7 @@ $().ready(function()
 function choose(){
   x=makeUniqueRandom();
   $('#test').val(x)
-  $('#bingo_image').src(images[x]);
+  $('#bingo_image').attr('src',images[x]);
 }
 
   var uniqueRandoms = [];
